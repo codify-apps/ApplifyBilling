@@ -25,10 +25,10 @@
             <!-- end logo -->
             <!-- start header right -->
             <div id="header_right">
-            	<h2>Invoice <?php echo $_POST['invoice']; ?></h2>
-                <!-- <p><b><?php date_default_timezone_set("Asia/Calcutta");
-                  echo date("D, d M Y h:i:s a")?></b> -->
-                <p>Payment Mode :  <?php echo $_POST['mode']; ?></p>
+            	<h3>Invoice <?php echo $_POST['invoice']; ?></h3>
+                <!-- <p><b></b> -->
+                <p><?php date_default_timezone_set("Asia/Calcutta");
+                  echo date("D, d M Y h:i:s a")?></p>
             </div>
             <!-- end header right -->
         </div>
@@ -60,13 +60,13 @@
             <!-- start invoice-desc -->
             <div class="invoice-email">
               <center>
-            	<h3>E-Mail:</h3><?php echo $email ?>
+            	<h3>e-mail:</h3><?php echo $email ?>
               </center>
             </div>
              <!-- end invoice-desc -->
             <div class="invoice-store">
               <center>
-           	  <h3>StoreId:</h3>
+           	  <h3>Payment Mode:</h3><?php echo $_POST['mode']; ?>
             </center>
 
             </div>
@@ -79,18 +79,18 @@
         	<table border="0" cellpadding="0" cellspacing="0" class="summary">
             	<thead>
                 	<tr>
-                		<th width="438">Product Name</th>
-                      <th width="99">SKU/IMEI</th>
-                      <th width="99">Sr. No.</th>
-                      <th width="99" style="text-align: center">S.Price</th>
-                      <th width="99" style="text-align: center">VAT</th>
-                      <th width="99" style="text-align: right">B.Price</th>
+                      <th style="border-bottom: 1px solid #cecece;">Product Name</th>
+                      <th width="99" style="border-bottom: 1px solid #cecece;">SKU/IMEI</th>
+                      <th width="99" style="border-bottom: 1px solid #cecece;">Sr. No.</th>
+                      <th width="99" style="text-align: center; border-bottom: 1px solid #cecece;">S.Price</th>
+                      <th width="99" style="text-align: center; border-bottom: 1px solid #cecece;">VAT</th>
+                      <th width="99" style="text-align: center; border-bottom: 1px solid #cecece;">B.Price</th>
                 	</tr>
                 </thead>
                 <tbody>
                 <?php
-                    for ($i=1; $i<=$lengthCells; $i++) 
-                    {   
+                    for ($i=1; $i<=$lengthCells; $i++)
+                    {
                         $vat ="";
                         $bprice ="";
                         $sprice = "";
@@ -100,31 +100,31 @@
                         }
                         if($_POST[($i).'pbprice1'] != "")
                         {
-                            $bprice = '₹'. $_POST[($i).'pbprice1'];
+                            $bprice = '₹ '. $_POST[($i).'pbprice1'];
                         }
                         if($_POST[($i).'psprice1'] != "")
                         {
-                            $sprice = '₹'. $_POST[($i).'psprice1'];
+                            $sprice = '₹ '. $_POST[($i).'psprice1'];
                         }
 
                         echo'<tr>
                         <td width="438">'.$_POST[($i).'pname1'].'</td>
                         <td width="99">'.$_POST[($i).'psku1'].'</td>
                         <td width="99">'.$_POST[($i).'psrno1'].'</td>
-                        <td width="99" style="text-align: center">'. $sprice .'</td>
-                        <td width="99" style="text-align: center">'. $vat .'</td>
-                        <td width="99" style="text-align: right">'. $bprice .'</td>
+                        <td width="99" style="text-align: center;">'. $sprice .'</td>
+                        <td width="99" style="text-align: center;">'. $vat .'</td>
+                        <td width="99" style="text-align: center;">'. $bprice .'</td>
                         </tr>';
                     }
 ?>
-                	
+
                     <tr class="sfoot">
                       <td width="438">&nbsp;</td>
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
-                        <td width="99" style="border: 1px solid black; ">VAT</th>
-                            <?php echo '<td width="99" style="border: 1px solid black; ">₹ '.$_POST['VatPrice'].'</th>' ?>
+                        <td width="99" style="border-left: 1px solid black; border-top: 1px solid black;">VAT</th>
+                            <?php echo '<td width="99" style="border-left: 1px solid black; border-top: 1px solid black; border-right: 1px solid black; text-align: center;">₹ '.$_POST['VatPrice'].'</th>' ?>
                         <!-- <td width="99" style="border: 1px solid black; ">23435</th> -->
                     </tr>
 
@@ -133,8 +133,8 @@
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
-                        <td width="99" style="border: 1px solid black">Surcharge</th>
-                            <?php echo '<td width="99" style="border: 1px solid black; ">₹ '.$_POST['surTotal'].'</th>' ?>
+                        <td width="99" style="border-left: 1px solid black; border-top: 1px solid black;">Surcharge</th>
+                            <?php echo '<td width="99" style="border-left: 1px solid black; border-top: 1px solid black; border-right: 1px solid black; text-align: center">₹ '.$_POST['surTotal'].'</th>' ?>
                         <!-- <td width="99" style="border: 1px solid black">2345</th> -->
                     </tr>
                 	<tr class="tfoot">
@@ -142,8 +142,8 @@
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
-                        <td width="99" style="border: 1px 0px 1px 1px solid black">G. Total</th>
-                            <?php echo '<td width="99" style="border: 1px solid black; ">₹ '.$_POST['PPrice'].'</th>' ?>
+                        <td width="99" style="border-top: 1px solid black;">G. Total</th>
+                            <?php echo '<td width="99" style="border: 1px solid black;text-align: center; ">₹ '.$_POST['PPrice'].'</th>' ?>
                         <!-- <td width="99" style="border: 1px solid black">348754</th> -->
                     </tr>
                 </tbody>

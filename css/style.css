@@ -17,9 +17,9 @@ body {background:url(../images/bg_body.gif) repeat; font-family:Arial, Helvetica
 .wrap {width:984px; margin:0 auto;}
 #box{background:url(../images/bg_box.png) repeat-y; width:960px; padding:0 12px; float:left;}
 #header {padding:0 40px; min-height:146px; border-bottom:solid 1px #efefef; }
-#logo {width:350px; min-height:70px; padding:30px 0 0 0; float:left; }
+#logo {width:350px; min-height:70px; padding:40px 0 0 0; float:left; }
 #header-center {width:180px; min-height:70px; padding:30px 0 0 0; float:left; }
-#header_right {width:350px; padding:30px 0 0 0; float:left; text-align:right; }
+#header_right {width:350px; padding:40px 0 0 0; float:left; text-align:right; }
 #header_right h2 {font-size:30px; line-height:34px; padding-bottom:6px;}
 #header_right p {font-size:16px; line-height:20px;}
 
@@ -34,13 +34,13 @@ body {background:url(../images/bg_body.gif) repeat; font-family:Arial, Helvetica
 
 /* Table */
 #table {width:878px; margin:40px;}
-table.summary{border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;}
-table.summary th{padding:10px 20px; border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2; font-size:14px; }
-table.summary td{padding:10px 20px; border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2; font-size:12px; }
-table.summary th{color:#000; text-align:left; font-weight:normal; background:url(../images/bg_thead.gif) repeat-x; border-left:0;font-weight: bold;}
-table.summary th:first-child, table.summary tr.tfoot td:first-child{border-left:1px solid #d2d2d2;}
+table.summary{/*border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;*/}
+table.summary th{padding:10px 20px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:14px; }
+table.summary td{padding:10px 20px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:12px; }
+table.summary th{color:#000; text-align:left; font-weight:normal;/* background:url(../images/bg_thead.gif) repeat-x;*/ border-left:0;font-weight: bold;}
+table.summary th:first-child, table.summary tr.tfoot td:first-child{/*border-left:1px solid #d2d2d2;*/}
 table.summary tr.tfoot td{border-left:0; color:#000; font-weight:bold;}
-table.summary tr.tfoot {background:#efefef;}
+table.summary tr.tfoot {/*background:#efefef;*/}
 table.summary tr.sfoot td{color:#000; font-weight:bold;}
 table.summary tr.sfoot {background:#ffffff;}
 table.summary tbody td{ text-align:left;}

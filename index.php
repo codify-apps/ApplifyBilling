@@ -29,18 +29,11 @@
             <!-- end logo -->
             <!-- start header right -->
             <div id="header_right">
-                <h2 >Invoice </h2><h2 class="invoice"></h2>
-                <!-- <p><b><?php date_default_timezone_set("Asia/Calcutta");
-                  echo date("D, d M Y h:i:s a")?></b> -->
+                <h3>Invoice </h3><h3 class="invoice"></h3>
+                <!-- <p><b></b> -->
                 </p>
-                <p>Payment Mode :
-                <select id="mode" required>
-                  <option value="">None</option>
-                  <option value="cash">Cash</option>
-                  <option value="card">Card</option>
-                  <option value="bajajfin">Bajaj Finance</option>
-                  <option value="cheque">Cheque</option>
-                </select></p>
+                <p><?php date_default_timezone_set("Asia/Calcutta");
+                  echo date("D, d M Y h:i:s a")?></p>
             </div>
             <!-- end header right -->
         </div>
@@ -64,13 +57,20 @@
             <!-- start invoice-desc -->
             <div class="invoice-email">
               <center>
-                <h3>E-Mail:</h3> <input type="text" name="email">
+                <h3>e-mail:</h3> <input type="text" name="email">
               </center>
             </div>
              <!-- end invoice-desc -->
             <div class="invoice-store">
               <center>
-              <h3>StoreId:</h3> <input type="text" name="storeid">
+              <h3> Payment Mode : </h3>
+              <select id="mode" required>
+                <option value="">None</option>
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+                <option value="bajajfin">Bajaj Finance</option>
+                <option value="cheque">Cheque</option>
+              </select>
             </center>
 
             </div>
@@ -83,48 +83,48 @@
             <table border="0" cellpadding="0" cellspacing="0" class="summary" id="myTable">
                 <thead>
                     <tr>
-                        <th width="438">Product Name</th>
-                      <th width="99">SKU/IMEI</th>
-                      <th width="99">Sr. No.</th>
-                      <th width="99" style="text-align: center">S.Price</th>
-                      <th width="99" style="text-align: center">VAT</th>
-                      <th width="99" style="text-align: right">B.Price</th>
+                        <th style=" ">Product Name</th>
+                        <th width="99" style=" ">SKU/IMEI</th>
+                        <th width="99" style=" ">Sr. No.</th>
+                        <th width="99" style="text-align: center;  ">S.Price</th>
+                        <th width="99" style="text-align: center;  ">VAT</th>
+                        <th width="99" style="text-align: center;  ">B.Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td width="438"><input type="text" name="pname1" ></td>
-                        <td width="99"><input type="text" name="psku1" ></td>
-                        <td width="99"><input type="text" name="psrno1" ></td>
-                        <td width="99" style="text-align: center"><input type="text" name="psprice1" onchange="onChange(this)" ></td>
-                        <td width="99" style="text-align: center"><input type="text" name="pvat1" onchange="onChange(this)"></td>
-                        <td width="99" style="text-align: right"><input type="text" name="pbprice1" disabled ></td>
+                        <td><input type="text" name="pname1" ></td>
+                        <td><input type="text" name="psku1" ></td>
+                        <td><input type="text" name="psrno1" ></td>
+                        <td style="text-align: center"><input type="text" name="psprice1" onchange="onChange(this)" ></td>
+                        <td style="text-align: center"><input type="text" name="pvat1" onchange="onChange(this)"></td>
+                        <td style="text-align: right"><input type="text" name="pbprice1" disabled ></td>
                     </tr>
 
                     <tr class="sfoot">
-                      <td width="438">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99" style="border: 1px solid black; ">VAT</th>
-                        <td width="99" style="border: 1px solid black; " name ="vatTotal">0.0</th>
+                      <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="border-left: 1px solid black; border-top: 1px solid black;">VAT</th>
+                        <td style="border-left: 1px solid black; border-top: 1px solid black; border-right: 1px solid black;" name ="vatTotal">0.0</th>
                     </tr>
 
                     <tr class="sfoot">
-                      <td width="438">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99" style="border: 1px solid black">Surcharge</th>
-                        <td width="99" style="border: 1px solid black" name="surTotal">0.0</th>
+                      <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="border-left: 1px solid black; border-top: 1px solid black;">Surcharge</th>
+                        <td style="border-left: 1px solid black; border-top: 1px solid black; border-right: 1px solid black;" name="surTotal">0.0</th>
                     </tr>
                     <tr class="tfoot">
-                        <td width="438">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
-                        <td width="99" style="border: 1px 0px 1px 1px solid black">G. Total</th>
-                        <td width="99" style="border: 1px solid black" name="sTotal">0.0</th>
+                        <td>Billed By:</td>
+                        <td><input type="text" name="storeid"></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="border-top: 1px solid black;">G. Total</th>
+                        <td style="border: 1px solid black" name="sTotal">0.0</th>
                     </tr>
                 </tbody>
           </table>
@@ -199,7 +199,7 @@ function disable()
             newObj[k + $(rowsInfo[k]).find('input')[l].getAttribute("name")] = $(rowsInfo[k]).find('input')[l].value;
         }
     }
-    for (j = 0; j < inputFields.length; j++) { 
+    for (j = 0; j < inputFields.length; j++) {
         inputFields[j].disabled =true;
     }
     newObj["PPrice"]= totalSPrice;
@@ -215,17 +215,17 @@ function disable()
 
     var today = new Date();
     var dd = today.getDate();
-    var mm = today.getMonth()+1; 
+    var mm = today.getMonth()+1;
 
     var yyyy = today.getFullYear();
     if(dd<10){
         dd='0'+dd
-    } 
+    }
     if(mm<10){
         mm='0'+mm
-    } 
+    }
     var today = dd+'/'+mm+'/'+yyyy;
-    newObj["date"] = today;    
+    newObj["date"] = today;
 
 $.ajax({
    url: "bill.php",
@@ -252,12 +252,12 @@ $.ajax
         success: function () {alert("Thanks!"); },
         failure: function() {alert("Error!");}
     });
-    
+
 }
 
 function printBill(html)
 {
-     var newWin= window.open(""); 
+     var newWin= window.open("");
      newWin.document.open();
      newWin.document.write(html);
      newWin.document.close();
@@ -273,12 +273,12 @@ function onChange(target)
         sPrice = $(target).parent().parent().find('[name="psprice1"]').val();
         if(!parseFloat(vat))
         {
-            vat =0.0; 
+            vat =0.0;
             target.value = vat;
         }
         if(!parseFloat(sPrice))
         {
-            sPrice =0.0; 
+            sPrice =0.0;
             $(target).parent().parent().find('[name="psprice1"]').val(sPrice);
         }
     }
@@ -288,17 +288,17 @@ function onChange(target)
         vat = $(target).parent().parent().find('[name="pvat1"]').val();
         if(!parseFloat(sPrice))
         {
-            sPrice =0.0; 
+            sPrice =0.0;
             target.value = sPrice;
         }
         if(!parseFloat(vat))
         {
-            vat =0.0; 
+            vat =0.0;
             $(target).parent().parent().find('[name="pvat1"]').val( vat);
         }
     }
     $(target).parent().parent().find('[name="pbprice1"]').val( Math.round( sPrice/( 1.0+ 1.1*vat*0.01 ) ) );
-     
+
     totalSPrice=0;
     $('[name="psprice1"]').each(function( index ) {
             var price = $( this ).val();
@@ -317,7 +317,7 @@ function onChange(target)
             }
     });
     vatTotal=0;
-    vatTotal = Math.round((totalSPrice - totalBPrice)*0.9090); 
+    vatTotal = Math.round((totalSPrice - totalBPrice)*0.9090);
     $('[name="vatTotal"]').text(vatTotal);
     surTotal=0;
     surTotal = totalSPrice - totalBPrice - vatTotal;
