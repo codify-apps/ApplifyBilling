@@ -45,6 +45,18 @@ table.summary tr.sfoot td{color:#000; font-weight:bold;}
 table.summary tr.sfoot {background:#ffffff;}
 table.summary tbody td{ text-align:left;}
 
+#table {width:878px; margin:20px 40px;}
+table.summary1{/*border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;*/}
+table.summary1 th{padding:5px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:14px; }
+table.summary1 td{padding:5px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:14px; }
+table.summary1 th{color:#000; text-align:left; font-weight:normal;/* background:url(../images/bg_thead.gif) repeat-x;*/ border-left:0;font-weight: bold;}
+table.summary1 th:first-child, table.summary tr.tfoot td:first-child{/*border-left:1px solid #d2d2d2;*/}
+table.summary1 tr.tfoot td{border-left:0; color:#000; font-weight:bold;}
+table.summary1 tr.tfoot {/*background:#efefef;*/}
+table.summary1 tr.sfoot td{color:#000; font-weight:bold;}
+table.summary1 tr.sfoot {background:#ffffff;}
+table.summary1 tbody td{ text-align:left;}
+
 #payment {width:880px; margin:0 40px; padding-bottom:20px; text-align:center; line-height:18px; font-size: 12px;}
 #payment span {font-size:16px; font-style:italic;},
 /*a.paypal {background:url(../images/paypal-sprite.png) no-repeat left top; width:150px; height:40px; display:block; text-indent:-9999px; text-align:left; line-height:40px; margin-left:18px; float:right;}

@@ -60,7 +60,7 @@
             <!-- start invoice-desc -->
             <div class="invoice-email">
               <center>
-            	<h3>e-mail:</h3><?php echo $email ?>
+            	<h3>e-mail:</h3><?php echo $email; ?>
               </center>
             </div>
              <!-- end invoice-desc -->
@@ -138,8 +138,8 @@
                         <!-- <td width="99" style="border: 1px solid black">2345</th> -->
                     </tr>
                 	<tr class="tfoot">
-                    	<td width="438">&nbsp;</td>
-                        <td width="99">&nbsp;</td>
+                    	<td width="438" style="font-weight:normal;">Cashier Id: <?php echo $storeid; ?></td>
+                        <td width="99"></td>
                         <td width="99">&nbsp;</td>
                         <td width="99">&nbsp;</td>
                         <td width="99" style="border-top: 1px solid black;">G. Total</th>

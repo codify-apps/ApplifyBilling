@@ -80,7 +80,7 @@
 
         <!-- start table -->
         <div id="table">
-            <table border="0" cellpadding="0" cellspacing="0" class="summary" id="myTable">
+            <table border="0" cellpadding="0" cellspacing="0" class="summary1" id="myTable">
                 <thead>
                     <tr>
                         <th style=" ">Product Name</th>
@@ -119,8 +119,11 @@
                         <td style="border-left: 1px solid black; border-top: 1px solid black; border-right: 1px solid black;" name="surTotal">0.0</th>
                     </tr>
                     <tr class="tfoot">
-                        <td>Billed By:</td>
-                        <td><input type="text" name="storeid"></td>
+                        <td>Cashier id: </td>
+                        <td><select id="storeid">
+                          <option value="jaspal">4816 (Jaspal Singh)</option>
+                          <option value="chhinder">4817 (Chhinder Pal)</option>
+                        </select></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td style="border-top: 1px solid black;">G. Total</th>
