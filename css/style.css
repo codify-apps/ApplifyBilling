@@ -1,5 +1,5 @@
 /* RESET FILE -------------- */
-* {outline: none;}body {margin: 0;padding: 0;font-size:12px;}a:link, a:visited, a:hover, a:active {text-decoration: none;}
+* {outline: none;}body {margin: 0;padding: 0;font-size:14px;}a:link, a:visited, a:hover, a:active {text-decoration: none;}
 ul, ol {margin: 0;padding: 0;list-style-type: none;}form {margin: 0px;padding: 0px;}a img {border: 0;}.clearfix:after{ content: ".";  display: block;  height: 0; clear: both;  visibility: hidden;}.clearfix{min-width: 0;	display: inline-block; display: block;}* html .clearfix{height: 1%;}.left{float: left;}.right{float: right;}.textleft{text-align:left;}.textright{text-align:right;}textarea {overflow:auto;}
 
 /* COMMON TAGS ------------- */
@@ -16,27 +16,27 @@ h1, h2, h3, h4, h5, h6, th{color:#000;}
 body {background:url(../images/bg_body.gif) repeat; font-family:Arial, Helvetica, sans-serif; padding:60px 0; color:#121212;}
 .wrap {width:984px; margin:0 auto;}
 #box{background:url(../images/bg_box.png) repeat-y; width:960px; padding:0 12px; float:left;}
-#header {padding:0 40px; min-height:146px; border-bottom:solid 1px #efefef; }
+#header {padding:0 40px; min-height:146px; border-bottom:solid 1px #000; }
 #logo {width:350px; min-height:70px; padding:40px 0 0 0; float:left; }
 #header-center {width:180px; min-height:70px; padding:30px 0 0 0; float:left; }
 #header_right {width:350px; padding:40px 0 0 0; float:left; text-align:right; }
 #header_right h2 {font-size:30px; line-height:34px; padding-bottom:6px;}
 #header_right p {font-size:16px; line-height:20px;}
 
-#details {min-height:100px; border-bottom:solid 1px #efefef; line-height:20px; padding:0 40px;}
+#details {min-height:80px; border-bottom:solid 1px #000; line-height:20px; padding:0 40px;}
 /*#details .invoice-from,*/
-#details .invoice-to {width:220px; float:left; padding:30px 0 0 0; }
-#details .invoice-contact{width:220px; float:left; padding:30px 0 0 0px;}
-#details .invoice-email {width:220px; padding:30px 0 0 0px; float:left;}
-#details .invoice-store {width:220px; padding:30px 0 0 0px; float:left;}
+#details .invoice-to {width:220px; float:left; padding:20px 0 0 0; }
+#details .invoice-contact{width:220px; float:left; padding:20px 0 0 0px;}
+#details .invoice-email {width:220px; padding:20px 0 0 0px; float:left;}
+#details .invoice-store {width:220px; padding:20px 0 0 0px; float:left;}
 #details h3 {font-size:16px;}
 #details p { font-size:16px;}
 
 /* Table */
-#table {width:878px; margin:40px;}
+#table {width:878px; margin:20px 40px;}
 table.summary{/*border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;*/}
 table.summary th{padding:10px 20px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:14px; }
-table.summary td{padding:10px 20px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:12px; }
+table.summary td{padding:10px 20px; /*border-left:1px solid #d2d2d2; border-top:1px solid #d2d2d2;*/ font-size:14px; }
 table.summary th{color:#000; text-align:left; font-weight:normal;/* background:url(../images/bg_thead.gif) repeat-x;*/ border-left:0;font-weight: bold;}
 table.summary th:first-child, table.summary tr.tfoot td:first-child{/*border-left:1px solid #d2d2d2;*/}
 table.summary tr.tfoot td{border-left:0; color:#000; font-weight:bold;}
@@ -45,7 +45,7 @@ table.summary tr.sfoot td{color:#000; font-weight:bold;}
 table.summary tr.sfoot {background:#ffffff;}
 table.summary tbody td{ text-align:left;}
 
-#payment {width:880px; margin:0 40px; padding-bottom:20px; text-align:center; line-height:18px;}
+#payment {width:880px; margin:0 40px; padding-bottom:20px; text-align:center; line-height:18px; font-size: 12px;}
 #payment span {font-size:16px; font-style:italic;},
 /*a.paypal {background:url(../images/paypal-sprite.png) no-repeat left top; width:150px; height:40px; display:block; text-indent:-9999px; text-align:left; line-height:40px; margin-left:18px; float:right;}
 a.paypal:hover {background-position:left bottom; }*/

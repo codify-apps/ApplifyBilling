@@ -79,12 +79,12 @@
         	<table border="0" cellpadding="0" cellspacing="0" class="summary">
             	<thead>
                 	<tr>
-                      <th style="border-bottom: 1px solid #cecece;">Product Name</th>
-                      <th width="99" style="border-bottom: 1px solid #cecece;">SKU/IMEI</th>
-                      <th width="99" style="border-bottom: 1px solid #cecece;">Sr. No.</th>
-                      <th width="99" style="text-align: center; border-bottom: 1px solid #cecece;">S.Price</th>
-                      <th width="99" style="text-align: center; border-bottom: 1px solid #cecece;">VAT</th>
-                      <th width="99" style="text-align: center; border-bottom: 1px solid #cecece;">B.Price</th>
+                      <th style="">Product Name</th>
+                      <th width="99" style="">SKU/IMEI</th>
+                      <th width="99" style="">Sr. No.</th>
+                      <th width="99" style="text-align: center; ">S.Price</th>
+                      <th width="99" style="text-align: center; ">VAT</th>
+                      <th width="99" style="text-align: center; ">B.Price</th>
                 	</tr>
                 </thead>
                 <tbody>
