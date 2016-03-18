@@ -17,10 +17,10 @@
         <div id="header">
         	<!-- start logo -->
             <div id="logo">
-            	<a href="#" title="Purple Scratch iStore Logo"><img src="images/logo.png" width="285" height="70" /></a>
+            	<a href="#" title="Purple Scratch iStore Logo"><img src="images/logo.tiff" width="285" height="70" /></a>
             </div>
             <div id="header-center">
-            	<a href="#" title="Purple Scratch iStore Logo"><img src="images/ar.png" width="180" height="70" /></a>
+            	<a href="#" title="Purple Scratch iStore Logo"><img src="images/ar.tiff" width="180" height="70" /></a>
             </div>
             <!-- end logo -->
             <!-- start header right -->
