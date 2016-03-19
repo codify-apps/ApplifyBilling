@@ -159,6 +159,7 @@ var totalPPrice=0;
 var totalBPrice=0;
 var vatTotal = 0;
 var surTotal = 0;
+var totalSPrice=0;
 function addNewRow()
 {
         var table = document.getElementById("myTable");
@@ -211,7 +212,7 @@ function disable()
     newObj["usersname"] = $('[name="usersname"]').val() ;
     newObj["contact"] = $('[name="contact"]').val() ;
     newObj["email"] = $('[name="email"]').val() ;
-    newObj["storeid"] = $('[name="storeid"]').val() ;
+    newObj["storeid"] = $( "#storeid option:selected" ).text() ;
     newObj["count"]= i;
     newObj["invoice"]= $('.invoice').text();
     newObj["mode"] = strUser;
